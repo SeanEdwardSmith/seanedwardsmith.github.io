@@ -1,0 +1,110 @@
+/* 
+===================================
+1. Tokens
+2. Base Defaults
+3. Layout
+4. Components
+5. Utilities
+6. Exceptions
+7. Media Queries
+===================================
+*/
+
+/* 
+===================================
+1. Tokens
+===================================
+*/
+
+/* 
+===================================
+2. Base Defaults
+===================================
+*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+===================================
+3. Layout
+===================================
+*/
+/* Navbar */
+.navbar {
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    color: white;
+}
+
+.nav-logo {
+    font-size: 50px;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 200px;
+}
+
+.mobile {
+    display: none;
+}
+
+/* 
+===================================
+4. Components
+===================================
+*/
+
+/* 
+===================================
+5. Utilities
+===================================
+*/
+
+/* 
+===================================
+6. Exceptions
+===================================
+*/
+
+/* 
+===================================
+7. Media Queries
+===================================
+*/
+@media only screen and (max-width: 376px){
+    .desktop {
+        display: none;  
+    }
+
+    .main-nav {
+        position: fixed;
+        z-index: 1000;
+    }
+
+    .mobile-nav {
+        display: block;
+        position: fixed;
+        width: 90%;
+        height: 100vh;
+        background-color: skyblue;
+        padding-top: 80px;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .mobile-nav.active {
+        transform: translateX(0);
+    }
+}
