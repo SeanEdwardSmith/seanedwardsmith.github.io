@@ -1,7 +1,7 @@
 // document objects
-const logo = document.querySelector('.nav-logo');
+const navButton = document.querySelector('.nav-button');
 const mobileNav = document.querySelector('.mobile-nav');
 
-logo.addEventListener('click', () => {
+navButton.addEventListener('click', () => {
     mobileNav.classList.toggle('active');
 });

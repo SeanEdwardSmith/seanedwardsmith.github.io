@@ -9,18 +9,19 @@
 <body>
     <header>
         <nav class="main-nav navbar">
-            <button class="nav-logo">Logo</button>
+            <button class="mobile nav-button">&Congruent;</button>
+            <img src="./assets/logo.png" alt="Logo" class="nav-logo">
             <ul class="nav-items desktop">
-                <li class="nav-link">About</li>
-                <li class="nav-link">Projects</li>
-                <li class="nav-link">Contact</li>
+                <li class="nav-link"><a href="#about">About</a></li>
+                <li class="nav-link"><a href="#projects">Projects</a></li>
+                <li class="nav-link"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div class="mobile-nav">
             <ul>
-                <li>About</li>
-                <li>Projects</li>
-                <li>Contact</li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
          </div>
         <section class="hero">
@@ -29,7 +30,18 @@
         </section>
     </header>
     <main>
-        <section></section>
+        <section id="about" class="container about">
+                <h2 class="section-header">About Me</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </section>
+        <section id="projects" class="container projects">
+                <h2 class="section-header">Projects</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </section>
+        <section id="contact" class="container contact">
+                <h2 class="section-header">Contact</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </section>
     </main>
     <footer class="footer">
         <p>&copy; 2026 Sean Edward Smith. All rights reserved.</p>

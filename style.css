@@ -36,7 +36,7 @@
 .navbar {
     height: 80px;
     width: 100%;
-    position: absolute;
+    position: fixed;
     background-color: blue;
     display: flex;
     align-items: center;
@@ -65,9 +65,21 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: solid 1px black;
-    padding-top: 80px;
-    height: 100vh;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-header {
+    font-size: 40px;
 }
 
 .footer {
@@ -85,7 +97,13 @@
 4. Components
 ===================================
 */
-
+.nav-link a {
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    
+}
 /* 
 ===================================
 5. Utilities
@@ -108,9 +126,21 @@
         display: none;  
     }
 
+    .mobile {
+        display: block;
+    }
+
     .main-nav {
         position: fixed;
         z-index: 1000;
+    }
+
+    .nav-button {
+        font-size: 60px;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
     }
 
     .mobile-nav {
