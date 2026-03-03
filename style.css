@@ -43,6 +43,11 @@
     justify-content: space-between;
     padding: 0 30px;
     color: white;
+    transition: transform 0.3s ease;
+}
+
+.navbar.scrolled {
+    transform: translateY(-100%);
 }
 
 .nav-logo {
@@ -53,7 +58,10 @@
     display: flex;
     justify-content: space-between;
     list-style: none;
-    width: 200px;
+}
+
+.nav-link {
+    padding: 50px;
 }
 
 .mobile {
