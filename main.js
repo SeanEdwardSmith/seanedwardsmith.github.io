@@ -1,7 +1,7 @@
 // document objects
 const navButton = document.querySelector('.nav-button');
 const mobileNav = document.querySelector('.mobile-nav');
-const navLinks = document.querySelectorAll('.mobile-nav a');
+const navLinks = document.querySelectorAll('.nav-links a');
 
 const navbar = document.querySelector('.navbar');
 let lastScrollY = window.scrollY;
