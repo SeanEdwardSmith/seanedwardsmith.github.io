@@ -76,6 +76,10 @@
     min-height: 100vh;
 }
 
+.hero h1 {
+    text-align: center;
+}
+
 .container {
     width: 90%;
     min-height: 100vh;
@@ -164,5 +168,9 @@
 
     .mobile-nav.active {
         transform: translateX(0);
+    }
+
+    span.break {
+        display: block;
     }
 }

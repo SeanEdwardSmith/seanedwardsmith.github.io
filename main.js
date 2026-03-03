@@ -8,10 +8,11 @@ navButton.addEventListener('click', () => {
 
 const navbar = document.querySelector('.navbar');
 let lastScrollY = window.scrollY;
+const scrollThreshold = 50; // Adjust this value as needed
 
 window.addEventListener('scroll', () => {
     const currentScrollY = window.scrollY;
-    if (currentScrollY > lastScrollY) {
+    if (currentScrollY > lastScrollY && currentScrollY > scrollThreshold) {
         navbar.classList.add('scrolled');
     } else {
         navbar.classList.remove('scrolled');
