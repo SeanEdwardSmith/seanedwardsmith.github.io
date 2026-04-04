@@ -15,6 +15,35 @@
 1. Tokens
 ===================================
 */
+:root {
+    /* COLOR TOKENS */
+    --color-primary: #001D3D;
+    --color-secondary: ;
+    --color-accent: ;
+    --color-background: #3B42BF;
+    --color-surface: #B7AEF2;
+    --color-surface-variant: ;
+    --color-text-primary: ;
+    --color-text-secondary: ;
+    --color-text-heading: #DFD9F1;
+
+    /* TYPOGRAPHY TOKENS */
+    --heading-color: ;
+    --primary-text-color: ;
+    --secondary-text-color: ;
+    --font-family-heading: ;
+    --font-family-base: ;
+    --font-size-small: 14px;
+    --font-size-medium: 16px;
+    --font-size-large: 20px;
+    --font-size-xlarge: 24px;
+
+    /* SPACING TOKENS */
+    --spacing-small: 8px;
+    --spacing-medium: 16px;
+    --spacing-large: 32px;
+    
+}
 
 /* 
 ===================================
@@ -27,6 +56,10 @@
     padding: 0;
 }
 
+body {
+    background-color: var(--color-background);
+}
+
 /* 
 ===================================
 3. Layout
@@ -37,11 +70,11 @@
     height: 80px;
     width: 100%;
     position: fixed;
-    background-color: blue;
+    background-color: var(--color-primary);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 30px;
+    padding: 0 var(--spacing-large);
     color: white;
     transition: transform 0.3s ease;
 }
@@ -62,8 +95,8 @@
     list-style: none;
 }
 
-.nav-link {
-    padding: 50px;
+.nav-items li {
+    padding: 0 var(--spacing-medium);
 }
 
 .mobile {
@@ -96,10 +129,14 @@
     font-size: 40px;
 }
 
+section {
+    border: 1px solid black;
+}
+
 .footer {
     height: 80px;
     width: 100%;
-    background-color: blue;
+    background-color: var(--color-primary);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -114,7 +151,7 @@
 .nav-link a {
     font-size: 20px;
     cursor: pointer;
-    color: white;
+    color: var(--color-text-heading);
     text-decoration: none;
     
 }
@@ -166,6 +203,11 @@
         padding-top: 80px;
         transform: translateX(-100%);
         transition: transform 0.3s ease-in-out;
+    }
+
+    .mobile-nav .nav-link
+    {
+        padding: 20px;
     }
 
     .mobile-nav.active {
