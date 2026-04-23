@@ -18,21 +18,20 @@
 :root {
     /* COLOR TOKENS */
     --color-primary: #001D3D;
-    --color-secondary: ;
-    --color-accent: ;
-    --color-background: #3B42BF;
-    --color-surface: #B7AEF2;
-    --color-surface-variant: ;
-    --color-text-primary: ;
-    --color-text-secondary: ;
+    --color-primary-hover: #003566;
+    --color-secondary: #6C8EBF;
+    --color-accent: #A8B2C1;
+    --color-background: #000814;
+    --color-surface: #001F3F;
+    --color-surface-elevated: #003566;
     --color-text-heading: #DFD9F1;
-
+    --color-text-primary: #E6EDF3;
+    --color-text-secondary: #A8B2C1;
+    --color-text-muted: #A8B2C1;
+    
     /* TYPOGRAPHY TOKENS */
-    --heading-color: ;
-    --primary-text-color: ;
-    --secondary-text-color: ;
-    --font-family-heading: ;
-    --font-family-base: ;
+    --font-family-heading: poppins, sans-serif;
+    --font-family-base: inter, sans-serif;
     --font-size-small: 14px;
     --font-size-medium: 16px;
     --font-size-large: 20px;
@@ -42,6 +41,9 @@
     --spacing-small: 8px;
     --spacing-medium: 16px;
     --spacing-large: 32px;
+    --radius-small: 12px;
+    --radius-medium: 24px;
+    --radius-large: 32px;
     
 }
 
@@ -58,6 +60,24 @@
 
 body {
     background-color: var(--color-background);
+    color: var(--color-text-primary);
+    font-family: var(--font-family-base);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-heading);
+    color: var(--color-text-heading);
+}
+
+.main-nav {
+    background-color: var(--color-primary);
+    border-bottom: var(--color-accent) 1px solid;
+}
+
+.about,
+.contact {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
 }
 
 /* 
@@ -70,12 +90,10 @@ body {
     height: 80px;
     width: 100%;
     position: fixed;
-    background-color: var(--color-primary);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 var(--spacing-large);
-    color: white;
     transition: transform 0.3s ease;
 }
 
@@ -85,7 +103,7 @@ body {
 
 .nav-logo {
     font-size: 50px;
-        color: white;
+        color: var(--color-text-heading);
         text-decoration: none;
 }
 
@@ -119,6 +137,7 @@ body {
     width: 90%;
     min-height: 100vh;
     margin: 0 auto;
+    border-radius: var(--radius-medium);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -129,10 +148,6 @@ body {
     font-size: 40px;
 }
 
-section {
-    border: 1px solid black;
-}
-
 .footer {
     height: 80px;
     width: 100%;
@@ -140,7 +155,6 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
 }
 
 /* 
@@ -153,7 +167,15 @@ section {
     cursor: pointer;
     color: var(--color-text-heading);
     text-decoration: none;
-    
+}
+
+.nav-items li {
+    border-radius: var(--radius-small);
+    padding: var(--spacing-small);
+}
+
+.nav-items li:hover {
+    background-color: var(--color-primary-hover);
 }
 /* 
 ===================================
