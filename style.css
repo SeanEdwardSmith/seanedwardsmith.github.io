@@ -103,8 +103,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-logo {
     font-size: 50px;
-        color: var(--color-text-heading);
-        text-decoration: none;
+    color: var(--color-text-heading);
+    text-decoration: none;
+    height: 100px;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+    margin-bottom: var(--spacing-large);
 }
 
 .nav-items {
@@ -177,6 +184,57 @@ h1, h2, h3, h4, h5, h6 {
 .nav-items li:hover {
     background-color: var(--color-primary-hover);
 }
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-surface);
+    border-radius: var(--radius-medium);
+    padding: var(--spacing-large);
+    margin: var(--spacing-large) 0;
+    width: 100%;
+    max-width: 400px;
+    max-height: 600px;
+    text-align: center;
+    border: 2px solid var(--color-accent);
+}
+
+.card-title {
+    font-size: var(--font-size-large);
+    padding-bottom: var(--spacing-medium);
+    border-bottom: 2px solid var(--color-accent);
+}
+
+.card-content {
+    padding: var(--spacing-medium);
+    color: var(--color-text-secondary);
+
+}
+
+.card-actions {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-medium);
+    margin-top: auto;
+}
+
+.card-link {
+    margin-top: var(--spacing-medium);
+    background-color: var(--color-surface-elevated);
+    border: 2px solid var(--color-accent);
+    border-radius: var(--radius-small);
+    padding: var(--spacing-small, var(--spacing-medium));
+    width: 150px;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.card-link:hover {
+    background-color: var(--color-accent);
+    color: var(--color-primary);
+}
+
 /* 
 ===================================
 5. Utilities
