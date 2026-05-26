@@ -151,6 +151,12 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
 }
 
+.cardgrid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    min-width: 100%;
+}
+
 .section-header {
     font-size: 40px;
 }
@@ -176,6 +182,10 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
 }
 
+.nav-link li:visited {
+    color: var(--color-text-heading);
+}
+
 .nav-items li {
     border-radius: var(--radius-small);
     padding: var(--spacing-small);
@@ -191,10 +201,11 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--color-surface);
     border-radius: var(--radius-medium);
     padding: var(--spacing-large);
-    margin: var(--spacing-large) 0;
+    margin: var(--spacing-large);
     width: 100%;
     max-width: 400px;
     max-height: 600px;
+    align-self: center;
     text-align: center;
     border: 2px solid var(--color-accent);
 }
@@ -221,6 +232,7 @@ h1, h2, h3, h4, h5, h6 {
 .card-link {
     margin-top: var(--spacing-medium);
     background-color: var(--color-surface-elevated);
+    color: var(--color-accent);
     border: 2px solid var(--color-accent);
     border-radius: var(--radius-small);
     padding: var(--spacing-small, var(--spacing-medium));
