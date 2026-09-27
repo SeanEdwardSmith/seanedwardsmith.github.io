@@ -151,6 +151,16 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
 }
 
+.about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 100px;
+    padding: 100px;
+    height: 400px;
+    text-align: center;
+}
+
 .cardgrid {
     display: grid;
     grid-template-columns: repeat(3, minmax(300px, 1fr));
