@@ -164,7 +164,6 @@ h1, h2, h3, h4, h5, h6 {
 .cardgrid {
     display: grid;
     grid-template-columns: repeat(3, minmax(300px, 1fr));
-    min-width: 100%;
 }
 
 .section-header {
@@ -174,6 +173,7 @@ h1, h2, h3, h4, h5, h6 {
 .footer {
     height: 80px;
     width: 100%;
+    margin-top: 100px;
     background-color: var(--color-primary);
     display: flex;
     align-items: center;
@@ -319,4 +319,8 @@ h1, h2, h3, h4, h5, h6 {
     span.break {
         display: block;
     }
+    
+    /* .mobile.cardgrid {
+        grid-template-columns: repeat(1, minmax(300px, 1fr));
+    } */
 }
