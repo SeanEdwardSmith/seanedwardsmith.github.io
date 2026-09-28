@@ -267,11 +267,13 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: row;
     gap: var(--spacing-large);
+    grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr);
 }
 
 #contact-info {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     gap: var(--spacing-medium);
 }
 
@@ -283,6 +285,7 @@ h1, h2, h3, h4, h5, h6 {
     border: 2px solid var(--color-accent);
     border-radius: var(--radius-medium);
     padding: var(--spacing-large);
+    margin-bottom: var(--spacing-small);
     width: 400px;
 }
 
@@ -370,5 +373,9 @@ h1, h2, h3, h4, h5, h6 {
 
     .contact-content {
         flex-direction: column;
+    }
+
+    #contact-form {
+        width: 100%;
     }
 }
