@@ -283,12 +283,24 @@ h1, h2, h3, h4, h5, h6 {
     border: 2px solid var(--color-accent);
     border-radius: var(--radius-medium);
     padding: var(--spacing-large);
+    width: 400px;
 }
 
-#contact-btn button{
+#contact-form input,
+#contact-form textarea {
+    background-color: var(--color-surface);
+    color: var(--color-text-primary);
+    border: 2px solid var(--color-accent);
+    border-radius: var(--radius-small);
+    padding: var(--spacing-small, var(--spacing-medium));
+}
+
+#contact-btn{
     background-color: var(--color-primary);
     color: var(--color-text-heading);
     border: 2px solid var(--color-accent);
+    border-radius: var(--radius-small);
+    padding: var(--spacing-small, var(--spacing-medium));
     font-size: var(--font-size-medium);
 }
 
