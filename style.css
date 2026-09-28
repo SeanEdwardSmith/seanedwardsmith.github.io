@@ -285,6 +285,13 @@ h1, h2, h3, h4, h5, h6 {
     padding: var(--spacing-large);
 }
 
+#contact-btn button{
+    background-color: var(--color-primary);
+    color: var(--color-text-heading);
+    border: 2px solid var(--color-accent);
+    font-size: var(--font-size-medium);
+}
+
 /* 
 ===================================
 5. Utilities
